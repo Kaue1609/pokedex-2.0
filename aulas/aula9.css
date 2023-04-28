@@ -1,0 +1,26 @@
+* {
+    margin:0
+}
+body {
+    color:red
+}
+
+.textoAzul {
+    color: blue
+}
+
+.textodestacado {
+    font-size: 40px
+}
+
+.desafio1 {
+    color:darkgreen
+}
+#lista1 {
+    color:aqua;
+    font-size: 30px
+}
+#lista2 {
+    color:darkmagenta;
+    font-size: 30px
+}
