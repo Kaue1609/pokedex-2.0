@@ -1,0 +1,58 @@
+#body:background {
+    color:blueviolet;
+}
+
+.meu-titulo {
+    color: yellow;
+}
+
+.meu-titulo:hover {
+    color: orange;
+    background-color: yellow;
+    padding-left: 50px;
+}
+
+.site-coder:visited {
+    background-color: plum;
+    color: orangered;
+}
+
+.site-coder:active {
+    color: aqua;
+    background-color: cadetblue;
+}
+
+#texto:focus {
+    color: darkred;
+    font-size: 25px;
+    background-color: black
+}
+
+.item:first-child {
+    color:chocolate;
+}
+
+.item:last-child {
+    color:cornflowerblue;
+}
+
+.item:nth-child(2n) {
+    background-color:darkgoldenrod
+}
+
+.item:nth-child(odd) {
+    background-color:rgb(53, 42, 15)
+}
+
+.elemento:not(.destaque) {
+    background-color:brown;
+}
+
+p:first-of-type {
+    color:red
+}
+
+imput [type="radio"]:checked {
+    accent-color: purple;
+}
+
