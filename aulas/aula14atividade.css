@@ -1,0 +1,40 @@
+body {
+ background-color: purple;
+}
+
+#grade {
+    display:grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    grid-column:
+    "aquamarino aquamarino bluevioleta bluevioleta bluevioleta"
+    "aquamarino aquamarino"
+    "preto foti maim maim sectioum"
+    ;
+}
+
+.aquamarine {
+    grid-area: aquamarino;
+    background-color:aquamarine;
+}
+.preto {
+    grid-area: preto;
+    background-color:black;
+}
+.blueviolet {
+    grid-area:bluevioleta;
+    background-color:blueviolet;
+}
+.cadetblue {
+    grid-area:maim;
+    background-color:cadetblue;
+}
+.darkcyan {
+    grid-area:asyde;
+    background-color:darkcyan;
+}
+.darkmagenta {
+    grid-area:sectioum;
+    background-color:darkmagenta;
+}

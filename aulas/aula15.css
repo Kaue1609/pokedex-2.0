@@ -1,0 +1,46 @@
+.container {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 150px, auto, 150px;
+        grid-gap: 5px;
+        grid-template-areas:
+            "header header"
+            "main footer"
+            ". ."
+        ;
+    }
+
+.box-1 {
+    grid-area: header;
+    background-color:aquamarine
+}
+
+.box-2 {
+    grid-area: nav;
+}
+
+.box-3 {
+    grid-area: main;
+    background-color:aqua;
+}
+
+.box-4 {
+    grid-area: aside;
+}
+
+.box-5 {
+    grid-area: footer;
+    background-color:cyan;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+}

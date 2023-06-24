@@ -1,0 +1,35 @@
+#greedee {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 80px 2fr 60px;
+    grid-template-areas:
+    "header header"
+    "nave contiudo"
+    "nave rodapé"
+    ;
+}
+header {
+    grid-area:header;
+    background-color: rgb(184, 0, 122);
+}
+nav {
+    grid-area: nave;
+    background-color: rgba(255, 255, 0, 0.541);
+}
+main {
+    grid-area: contiudo;
+    background-color:peachpuff;
+}
+footer {
+    grid-area:rodapé;
+    background-color: rgba(0, 0, 255, 0.678);
+}
+
+.titulos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+.border {
+    border: 2px solid black;
+}

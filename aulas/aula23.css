@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "image botoes"
+    ;
+}
+
+#imagem {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    grid-area: botoes;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnmore {
+    font-size: 75px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(0, 0, 56), rgb(10, 10, 148), rgb(167, 0, 167), rgb(58, 0, 58));
+    color:black;
+}
+
+#btnless {
+    margin-top: 125px;
+    font-size: 75px;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(0, 0, 56), rgb(10, 10, 148), rgb(167, 0, 167), rgb(58, 0, 58));
+    color:black;
+}
+
+.animaçao {
+    width: 300px;
+    height: 100px;
+    border: 1px solid rgba(126, 0, 230, 0.418);
+    transition: width 0,7s sheight 0,7s
+}
+.animaçao:hover {
+    width: 305px;
+    height: 105px;
+    border: 5px solid rgba(126, 0, 230, 0.418);
+}
+
+#numero {
+    color: white;
+    font-size: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.i {
+    margin-top: 150px;
+    border: 3px solid white;
+}
