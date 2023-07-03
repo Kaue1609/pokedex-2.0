@@ -1,26 +1,16 @@
-let maça = {
-    nome: "maça",
-    cor: "vermelha",
-    peso: "20g",
-    tipo: "fruta",
+function LerMais() {
+    var trespontos=document.getElementById("trespontos");
+    let maisTexto=document.getElementById("mais");
+    let botaoLeiaMais=document.getElementById("btn-LeiaMais");
+
+    if(trespontos.style.display == "none") {
+        trespontos.style.display = "inline";
+        maisTexto.style.display = "none";
+        botaoLeiaMais.innerHTML = "Leia Mais";
+    }
+    else {
+        trespontos.style.display = "none";
+        maisTexto.style.display = "inline";
+        botaoLeiaMais.innerText = "Ler Menos"
+    }
 }
-
-let abacaxi = {
-    nome: "abacaxi",
-    cor: "amarela",
-    peso: "100g",
-    tipo: "fruta",
-}
-
-let cenoura = {
-    nome: "cenoura",
-    cor: "laranja",
-    peso: "57gg",
-    tipo: "legume",
-}
-
-let alimentos = [maça, abacaxi, cenoura];
-
-alimentos.forEach(ali => {
-    console.log(ali.cor)
-} )
